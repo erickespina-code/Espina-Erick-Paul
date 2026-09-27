@@ -1,32 +1,64 @@
-h1, p{
+.Header {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #1a1614; 
+    border: 1px solid #4a3b32;  
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+}
+p{
     text-align: center;
     font-family: Arial, sans-serif;
 }
-.Main_Container {
-    background-color: #eceaea;
-    border: 1px solid #d40505;
-    border-radius: 10px;
+body {
+    background-color: #1a1614; 
+    color: #e6dfd5;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    box-shadow: 0 4px 8px rgb(118, 4, 4);
-    max-width: 500px;
-    margin: 20px auto;
 }
-form {
+.Main_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.Deviljho, .Rajang, .Bazelgeuse {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    background-color: #2b2320; 
+    border: 1px solid #4a3b32;  
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    flex: 1;
 }
 
-.D_pic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-.D_pic img{
+.Deviljho img, .Rajang img , .Bazelgeuse img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 220px;
+    object-fit: fill;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hyperlinks {
+    background-color: #2b2320;
+    border: 1px solid #4a3b32;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+}
+li {
+    text-align: left;
+    color: rgb(243, 236, 236);
+    font-family: Arial, sans-serif;
 }
